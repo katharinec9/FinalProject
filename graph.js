@@ -12,7 +12,7 @@ var intGraph = function(target, countrys)
 {
     var screen = {width:600, height:600}
     
-    var margins = {top:15,bottom:50,left:70,right: 40}
+    var margins = {top:50,bottom:50,left:70,right: 60}
 var graph =
     {
         width:screen.width-margins.left-margins.right,
@@ -41,11 +41,8 @@ var graph =
     
     createLabels(screen,margins,graph,target);
     createAxes(screen,margins,graph,target,xScale,yScaleL,yScaleR)
+    drawLines(students,graph,target,xScale,yScale,deathScale)
     
-
-    /*
-    drawLines(students,graph,target,xScale,yScale,gradeScale)
-    */
 }
 
     var yearscale = d3.scaleOrdinal(d3.schemeCategory10)
@@ -78,7 +75,7 @@ var graph =
         .attr("text-anchor", "middle")
         .attr("transform", "rotate(270)")
          labels.append("g")
-        .attr("transform", "translate(600,"+(margins.top+(graph.height/2))+")")
+        .attr("transform", "translate(600,"+(margins.top+ (graph.height/2))+")")
         .append("text")
         .text("% of children vaccinated (DTP1)")
         .classed("label", true)
@@ -104,82 +101,8 @@ var graph =
         .attr("transform","translate("+margins.left+","+(margins.top)+")")
         .call(yAxisL)
     axes.append("g")
-        .attr("transform","translate(" +(graph.width+margins.right-margins.top) +",+0)")
+        .attr("transform","translate(" +(screen.width - margins.right) + "," + (margins.top) + ")")
         .call(yAxisR)
     
  } //I DIDNT DO ANYTHING PAST THIS POINT//
  
- var drawLines = function(students,graph,target,xScale,yScale,gradeScale)
- {
-     var lineGenerator = d3.line()
-        .x(function(quiz,i){return xScale(i)})
-        .y(function(quiz){return yScale(quiz.grade)})
-        .curve(d3.curveCardinal)
-     
-     var lines = 
-        target.select(".graph")
-        .selectAll("g")
-        .data(students)
-        .enter()
-        .append("g")
-        .classed("line", true)
-        .attr("fill","none")
-        .attr("stroke",function(student)
-                {
-            return gradeScale(student.quizes.grade)
-        })
-        .attr("stroke-width", 2)
-     .on("mouseover", function(student)
-        {
-         d3.selectAll(".line")
-            .classed("fade",true);
-         
-         d3.select(this)
-            .classed("fade", false).classed("red", true)
-            .raise();
-        var xPosition = d3.event.pageX;
-        var yPosition = d3.event.pageY
-            d3.select("#tooltip")
-                .style("left", xPosition+"px")
-                .style("top", yPosition+"px")
-                .select("img")
-                .attr("src", "imgs/"+student.picture)
-            d3.select("#tooltip")
-                .style("left", xPosition+"px")
-                .style("top", yPosition+"px")
-                .select("#value")
-                .text(getFinal(student))
-            d3.select("#tooltip")
-                .style("left", xPosition+"px")
-                .style("top", yPosition+"px")
-                .select("#value1")
-                .text(getmeanHW(student))
-            d3.select("#tooltip")
-                .style("left", xPosition+"px")
-                .style("top", yPosition+"px")
-                .select("#value2")
-                .text(getmeanQuiz(student))
-            d3.select("#tooltip")
-                .style("left", xPosition+"px")
-                .style("top", yPosition+"px")
-                .select("#value3")
-                .text(getmeanTest(student))
-         d3.select("#tooltip").classed("hidden", false)
-     })
-     .on("mouseout", function(student)
-        {
-         d3.selectAll(".line")
-            .classed("fade", false)
-            .classed("red",false)
-        d3.select("#tooltip").classed("hidden", true)
-     })
-
-     
-     lines.append("path")
-        .datum(function(student)
-                {return student.quizes})
-        .attr("d",lineGenerator)
-     
- }
-  
-
