@@ -31,7 +31,10 @@ var graph =
         .domain([lowY, highY])
         .range([0,graph.width])
     var highD = 9000;
-    var yScale = d3.scaleLinear()
+    var yScaleL = d3.scaleLinear()
+        .domain([0,highD])
+        .range([graph.height,0])
+    var yScaleR = d3.scaleLinear()
         .domain([0,highD])
         .range([graph.height,0])
 
@@ -41,16 +44,6 @@ var graph =
     
 
     /*
-    var xScale = d3.scaleLinear()
-        .domain([0,countrys[0].quizes.length-1])
-        .range([0,graph.width])
-    var highD = 10;
-    var yScale = d3.scaleLinear()
-        .domain([0,highD])
-        .range([graph.height,0])
-    
-    createLabels(screen,margins,graph,target);
-    createAxes(screen,margins,graph,target,xScale,yScale)
     drawLines(students,graph,target,xScale,yScale,gradeScale)
     */
 }
@@ -99,8 +92,9 @@ var graph =
  {
    var xAxis = d3.axisBottom(xScale)
    .tickFormat(d3.format("d"))
-   var yAxis = d3.axisLeft(yScale)
-   
+   var yAxisL = d3.axisLeft(yScaleL)
+  var yAxisR = d3.axisLeft(yScaleR)
+    
    var axes = 
         target.append("g")
     axes.append("g")
@@ -108,9 +102,12 @@ var graph =
         .call(xAxis)
     axes.append("g")
         .attr("transform","translate("+margins.left+","+(margins.top)+")")
-        .call(yAxis)
+        .call(yAxisL)
+    axes.append("g")
+        .attr("transform","translate("+margins.right+","+(margins.bottom)+")")
+        .call(yAxisR)
     
- }
+ } //I DIDNT DO ANYTHING PAST THIS POINT//
  
  var drawLines = function(students,graph,target,xScale,yScale,gradeScale)
  {
