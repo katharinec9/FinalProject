@@ -78,7 +78,7 @@ var graph =
         .attr("text-anchor", "middle")
         .attr("transform", "rotate(270)")
          labels.append("g")
-        .attr("transform", "translate(580,"+(margins.top+(graph.height/2))+")")
+        .attr("transform", "translate(600,"+(margins.top+(graph.height/2))+")")
         .append("text")
         .text("% of children vaccinated (DTP1)")
         .classed("label", true)
@@ -104,7 +104,7 @@ var graph =
         .attr("transform","translate("+margins.left+","+(margins.top)+")")
         .call(yAxisL)
     axes.append("g")
-        .attr("transform","translate(" +(graph.width) +",+0)")
+        .attr("transform","translate(" +(graph.width+margins.right-margins.top) +",+0)")
         .call(yAxisR)
     
  } //I DIDNT DO ANYTHING PAST THIS POINT//
