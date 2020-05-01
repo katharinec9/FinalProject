@@ -40,7 +40,7 @@ var graph =
 
     
     createLabels(screen,margins,graph,target);
-    createAxes(screen,margins,graph,target,xScale,yScale)
+    createAxes(screen,margins,graph,target,xScale,yScaleL,yScaleR)
     
 
     /*
@@ -88,7 +88,7 @@ var graph =
     
 }
 
- var createAxes = function(screen,margins,graph,target,xScale,yScale)
+ var createAxes = function(screen,margins,graph,target,xScale,yScaleL, yScaleR)
  {
    var xAxis = d3.axisBottom(xScale)
    .tickFormat(d3.format("d"))
@@ -104,7 +104,7 @@ var graph =
         .attr("transform","translate("+margins.left+","+(margins.top)+")")
         .call(yAxisL)
     axes.append("g")
-        .attr("transform","translate("+margins.right+","+(margins.bottom)+")")
+        .attr("transform","translate("+margins.right+","+(margins.top)+")")
         .call(yAxisR)
     
  } //I DIDNT DO ANYTHING PAST THIS POINT//
