@@ -34,21 +34,21 @@ var graph =
     var yScaleL = d3.scaleLinear()
         .domain([0,highD])
         .range([graph.height,0])
+    var highV = 100
     var yScaleR = d3.scaleLinear()
-        .domain([0,highD])
+        .domain([0,highV])
         .range([graph.height,0])
 
     
     createLabels(screen,margins,graph,target);
     createAxes(screen,margins,graph,target,xScale,yScaleL,yScaleR)
-    drawLines(students,graph,target,xScale,yScale,deathScale)
+    drawLines(countrys,graph,target,xScale,yScaleL,yScaleR,yearscale)
     
 }
 
     var yearscale = d3.scaleOrdinal(d3.schemeCategory10)
     var createLabels = function(screen, margins, graph, target)
-   
-    
+
     
 {
    var labels = 
@@ -104,5 +104,44 @@ var graph =
         .attr("transform","translate(" +(screen.width - margins.right) + "," + (margins.top) + ")")
         .call(yAxisR)
     
- } //I DIDNT DO ANYTHING PAST THIS POINT//
+ } 
  
+var drawLines = function(countrys,graph,target,xScale,yScaleL,yScaleR, yearScale)
+ {
+     var lineGenerator1 = d3.line()
+        .x(function(box){return xScale(box.year)})
+        .y(function(box){return yScaleL(box.deaths)})
+        .curve(d3.curveCardinal)
+     
+     var lineGenerator2 = d3.line()
+        .x(function(box){return xScale(box.year)})
+        .y(function(box){return yScaleR(box.pvaccinated)})
+        .curve(d3.curveCardinal)
+     
+     var lines = 
+        target.select(".graph")
+        .selectAll("g")
+        .data(countrys)
+        .enter()
+        .append("g")
+        .classed("line", true)
+        .attr("fill","none")
+        .attr("stroke",function(country)
+                {
+            return "black"
+            
+        })
+        
+        lines.append("path")
+        .datum(function(country)
+        {return country.yeardata})
+        .attr("d",lineGenerator1)
+     
+     lines.append("path")
+        .datum(function(country)
+        {return country.yeardata})
+        .attr("d",lineGenerator2)
+        }
+
+
+        

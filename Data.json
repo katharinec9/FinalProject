@@ -1,7 +1,7 @@
 [
-    {
-    "Argentina": [
-        {
+    {"name": "Argentina", 
+    "yeardata": [
+        {    
         "year": 1990,
         "deaths": 2280,
         "pvaccinated": 95
@@ -144,8 +144,9 @@
     ]
     
     },
-{ "France" : [
-            {
+{ "name": "France", 
+        "yeardata": [ 
+    {
         "year": 1990,
         "deaths": 2661,
         "pvaccinated": 97
@@ -288,7 +289,8 @@
 ]
     
 },
-    { "Iran" : [
+    { "name": "Iran", 
+     "yeardata": [
             {
         "year": 1990,
         "deaths": 5186,
@@ -432,7 +434,8 @@
 ]
     
 },
-       { "Mexico" : [
+       { "name": "Mexico" ,
+        "yeardata": [
             {
         "year": 1990,
         "deaths": 8956,
@@ -576,7 +579,8 @@
 ]
     
 },
-   { "United States" : [
+   { "name": "United States", 
+    "yeardata": [
             {
         "year": 1990,
         "deaths": 4184,
