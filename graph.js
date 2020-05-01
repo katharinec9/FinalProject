@@ -93,8 +93,8 @@ var graph =
    var xAxis = d3.axisBottom(xScale)
    .tickFormat(d3.format("d"))
    var yAxisL = d3.axisLeft(yScaleL)
-  var yAxisR = d3.axisLeft(yScaleR)
-    
+  var yAxisR = d3.axisRight(yScaleR)
+
    var axes = 
         target.append("g")
     axes.append("g")
@@ -104,7 +104,7 @@ var graph =
         .attr("transform","translate("+margins.left+","+(margins.top)+")")
         .call(yAxisL)
     axes.append("g")
-        .attr("transform","translate("+margins.right+","+(margins.top)+")")
+        .attr("transform","translate(" +(graph.width) +",+0)")
         .call(yAxisR)
     
  } //I DIDNT DO ANYTHING PAST THIS POINT//
