@@ -30,7 +30,7 @@ var graph =
      var xScale = d3.scaleLinear()
         .domain([lowY, highY])
         .range([0,graph.width])
-    var highD = 9000;
+    var highD = 13700;
     var yScaleL = d3.scaleLinear()
         .domain([0,highD])
         .range([graph.height,0])
@@ -141,6 +141,7 @@ var drawLines = function(countrys,graph,target,xScale,yScaleL,yScaleR, yearScale
         .datum(function(country)
         {return country.yeardata})
         .attr("d",lineGenerator2)
+         .style("stroke-dasharray", ("3, 3"))
         }
 
 
