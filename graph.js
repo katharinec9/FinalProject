@@ -100,10 +100,14 @@ var graph =
     axes.append("g")
         .attr("transform","translate("+margins.left+","+(margins.top)+")")
         .call(yAxisL)
+      .attr("class", "axisBlue")
     axes.append("g")
         .attr("transform","translate(" +(screen.width - margins.right) + "," + (margins.top) + ")")
+      .attr("class", "axisRed")
         .call(yAxisR)
-    
+       
+          
+       
  } 
  
 var drawLines = function(countrys,graph,target,xScale,yScaleL,yScaleR, yearScale)
@@ -131,6 +135,7 @@ var drawLines = function(countrys,graph,target,xScale,yScaleL,yScaleR, yearScale
             return "black"
             
         })
+   
         
         lines.append("path")
         .datum(function(country)
@@ -143,6 +148,10 @@ var drawLines = function(countrys,graph,target,xScale,yScaleL,yScaleR, yearScale
         .attr("d",lineGenerator2)
          .style("stroke-dasharray", ("3, 3"))
         }
-
+legend = svg.append("g")
+    .attr("class","legend")
+    .attr("transform","translate(50,30)")
+    .style("font-size","12px")
+    .call(d3.legend)
 
         
