@@ -122,6 +122,7 @@ var drawLines = function(countrys,graph,target,xScale,yScaleL,yScaleR, yearScale
         .x(function(box){return xScale(box.year)})
         .y(function(box){return yScaleR(box.pvaccinated)})
         .curve(d3.curveCardinal)
+     
      var mycolor = d3.scaleOrdinal()
      .domain(["Senegal", "Bolivia", "United States", "Mexico", "Cambodia"])
      .range(d3.schemeSet1)
@@ -134,23 +135,44 @@ var drawLines = function(countrys,graph,target,xScale,yScaleL,yScaleR, yearScale
         .append("g")
         .classed("line", true)
         .attr("fill","none")
-        .attr("stroke",function(country)
-                {
-            return "black"
-            
-        })
-   
+        .style ("stroke", function (d){return mycolor(d.name)}) 
+              
+/* { 
+            return yearscale(subject.country);
+        }
+        .attr("stroke-width",3)
+        .on("mouseover",function(countrys)
         
+            {
+            d3.selectAll(".line")
+            .classed("fade",true);
+            
+            d3.select(this)
+                .classed("fade",false)
+                .raise(); //move to top
+            }
+        )
+        .on("mouseout",function(countrys)
+           {
+            if(! d3.select(this).classed("off"))
+            {
+            
+            d3.selectAll(".line")
+                .classed("fade",false);
+            }
+            
+        }) */
+            
         lines.append("path")
         .datum(function(country)
         {return country.yeardata})
         .attr("d",lineGenerator1)
-        .style ("stroke", function (d){return mycolor(d.name)}) 
+         
      
      lines.append("path")
         .datum(function(country)
         {return country.yeardata})
         .attr("d",lineGenerator2)
          .style("stroke-dasharray", ("3, 3"))
-         .style ("stroke", function (d){return mycolor(d.name)}) 
+     
         }
