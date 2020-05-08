@@ -15,7 +15,7 @@ var intGraph = function(target, countrys)
 {
     var screen = {width:600, height:600}
     
-    var margins = {top:50,bottom:50,left:70,right: 60}
+    var margins = {top:60,bottom:50,left:70,right: 60}
 var graph =
     {
         width:screen.width-margins.left-margins.right,
@@ -143,7 +143,7 @@ var drawLines = function(countrys,graph,target,xScale,yScaleL,yScaleR, yearScale
               
 
         .attr("stroke-width",4)
-        .on("mouseover",function(countrys)
+        .on("mouseover",function(country)
         
             {
             d3.selectAll(".line")
@@ -152,12 +152,12 @@ var drawLines = function(countrys,graph,target,xScale,yScaleL,yScaleR, yearScale
             d3.select(this)
                 .classed("fade",false)
                 .raise(); //move to top
+            
             var xPosition = d3.event.pageX;
             var yPosition = d3.event.pageY
              d3.select("#tooltip")
                 .style("left", xPosition+"px")
                 .style("top", yPosition+"px")
-                .select("#value")
                 .text(getCountry(country))
             d3.select("#tooltip").classed("hidden", false)
      
@@ -188,6 +188,16 @@ var drawLines = function(countrys,graph,target,xScale,yScaleL,yScaleR, yearScale
          .style("stroke-dasharray", ("3, 3"))
      
         }
-        
+        var xLabel=540
+        var size=20
+        var allgroups= ["Senegal", "Mexico", "Bolivia", "United States", "Cambodia"]
+        svg.selectAll("mylabels")
+        .data(allgroups)
+        .enter()
+        .append("text")
+        .attr("x", 590+size*.8)
+        .attr("y", function(d, i){return i *(size + 5) + (size/2)})
+        .style("alignment-baseline", "middle")
+      
 
 
