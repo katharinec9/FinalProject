@@ -1,3 +1,6 @@
+var getCountry = function(country)
+    {return (country.name)}
+
 var DataPromise = d3.json("Data.json");
     DataPromise.then (function(country){
             console.log("worked", country); 
@@ -123,6 +126,7 @@ var drawLines = function(countrys,graph,target,xScale,yScaleL,yScaleR, yearScale
         .y(function(box){return yScaleR(box.pvaccinated)})
         .curve(d3.curveCardinal)
      
+     
      var mycolor = d3.scaleOrdinal()
      .domain(["Senegal", "Bolivia", "United States", "Mexico", "Cambodia"])
      .range(d3.schemeSet1)
@@ -148,15 +152,24 @@ var drawLines = function(countrys,graph,target,xScale,yScaleL,yScaleR, yearScale
             d3.select(this)
                 .classed("fade",false)
                 .raise(); //move to top
+            var xPosition = d3.event.pageX;
+            var yPosition = d3.event.pageY
+             d3.select("#tooltip")
+                .style("left", xPosition+"px")
+                .style("top", yPosition+"px")
+                .select("#value")
+                .text(getCountry(country))
+            d3.select("#tooltip").classed("hidden", false)
+     
             }
         )
         .on("mouseout",function(countrys)
-           {
+           {  
             if(! d3.select(this).classed("off"))
             {
-            
             d3.selectAll(".line")
                 .classed("fade",false);
+             d3.select("#tooltip").classed("hidden", true)
                 
             }
             
@@ -175,3 +188,6 @@ var drawLines = function(countrys,graph,target,xScale,yScaleL,yScaleR, yearScale
          .style("stroke-dasharray", ("3, 3"))
      
         }
+        
+
+
