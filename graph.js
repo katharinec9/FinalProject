@@ -137,10 +137,8 @@ var drawLines = function(countrys,graph,target,xScale,yScaleL,yScaleR, yearScale
         .attr("fill","none")
         .style ("stroke", function (d){return mycolor(d.name)}) 
               
-/* { 
-            return yearscale(subject.country);
-        }
-        .attr("stroke-width",3)
+
+        .attr("stroke-width",4)
         .on("mouseover",function(countrys)
         
             {
@@ -159,9 +157,10 @@ var drawLines = function(countrys,graph,target,xScale,yScaleL,yScaleR, yearScale
             
             d3.selectAll(".line")
                 .classed("fade",false);
+                
             }
             
-        }) */
+        }) 
             
         lines.append("path")
         .datum(function(country)
