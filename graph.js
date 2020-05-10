@@ -28,12 +28,12 @@ var graph =
         target.append("g")
         .classed("graph", true)
         .attr("transform", "translate("+margins.left+","+margins.top+")")
-    var highY = 2018
+    var highY = 2017
     var lowY = 1990
      var xScale = d3.scaleLinear()
         .domain([lowY, highY])
         .range([0,graph.width])
-    var highD = 13700;
+    var highD = 0.2;
     var yScaleL = d3.scaleLinear()
         .domain([0,highD])
         .range([graph.height,0])
@@ -60,7 +60,7 @@ var graph =
         .classed("labels", true)
    
    labels.append("text")
-        .text(" Deaths Caused by Vaccine Preventable Diseases per Year")
+        .text(" Deaths Caused by Vaccine Preventable Diseases each year")
         .classed("title", true)
         .attr("text-anchor", "middle")
         .attr("x", margins.left+(graph.width/2))
@@ -74,7 +74,7 @@ var graph =
     labels.append("g")
         .attr("transform", "translate(20,"+(margins.top+(graph.height/2))+")")
         .append("text")
-        .text("# of deaths")
+        .text("% of deaths")
         .classed("label", true)
         .attr("text-anchor", "middle")
         .attr("transform", "rotate(270)")
@@ -88,11 +88,12 @@ var graph =
     
     
 }
-
+ 
  var createAxes = function(screen,margins,graph,target,xScale,yScaleL, yScaleR)
  {
    var xAxis = d3.axisBottom(xScale)
    .tickFormat(d3.format("d"))
+   
    var yAxisL = d3.axisLeft(yScaleL)
   var yAxisR = d3.axisRight(yScaleR)
 
@@ -100,14 +101,17 @@ var graph =
         target.append("g")
     axes.append("g")
         .attr("transform","translate("+margins.left+","+(margins.top+graph.height)+")")
+      .style("font", "13px times")
         .call(xAxis)
     axes.append("g")
         .attr("transform","translate("+margins.left+","+(margins.top)+")")
+        .style("font", "14px times")
         .call(yAxisL)
       .attr("class", "axisBlue")
     axes.append("g")
         .attr("transform","translate(" +(screen.width - margins.right) + "," + (margins.top) + ")")
       .attr("class", "axisRed")
+      .style("font", "14px times")
         .call(yAxisR)
        
           
@@ -118,7 +122,7 @@ var drawLines = function(countrys,graph,target,xScale,yScaleL,yScaleR, yearScale
  {
      var lineGenerator1 = d3.line()
         .x(function(box){return xScale(box.year)})
-        .y(function(box){return yScaleL(box.deaths)})
+        .y(function(box){return yScaleL(box.pdeaths)})
         .curve(d3.curveCardinal)
      
      var lineGenerator2 = d3.line()

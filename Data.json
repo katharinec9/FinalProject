@@ -4,141 +4,169 @@
         {    
         "year": 1990,
         "deaths": 11091,
-        "pvaccinated": 75
+        "pvaccinated": 75,
+        "pdeaths": 0.147
         },
         {
        "year": 1991,
         "deaths": 11009,
-        "pvaccinated": 75
+        "pvaccinated": 75,
+        "pdeaths": 0.142
         },
           {
        "year": 1992,
         "deaths": 11035,
-        "pvaccinated": 77
+        "pvaccinated": 77,
+        "pdeaths": 0.138
         },
           {
        "year": 1993,
         "deaths": 11123,
-        "pvaccinated": 80
+        "pvaccinated": 80,
+        "pdeaths": 0.135
         },
           {
        "year": 1994,
         "deaths": 10827,
-        "pvaccinated": 80
+        "pvaccinated": 80,
+        "pdeaths": 0.128
         },
           {
        "year": 1995,
         "deaths": 10783,
-        "pvaccinated": 93
+        "pvaccinated": 93,
+        "pdeaths": 0.124
         },
           {
        "year": 1996,
         "deaths": 10678,
-        "pvaccinated": 88
+        "pvaccinated": 88,
+        "pdeaths": 0.120
         },
           {
        "year": 1997,
         "deaths": 10555,
-        "pvaccinated": 81
+        "pvaccinated": 81,
+        "pdeaths": 0.116
         },
           {
        "year": 1998,
         "deaths": 10779,
-        "pvaccinated": 79
+        "pvaccinated": 79,
+        "pdeaths": 0.115
         },  {
        "year": 1999,
         "deaths": 10767,
-        "pvaccinated": 78
+        "pvaccinated": 78,
+        "pdeaths": 0.113
         },
           {
        "year": 2000,
         "deaths": 10272,
-        "pvaccinated": 79
+        "pvaccinated": 79,
+        "pdeaths": 0.105
         },
           {
        "year": 2001,
         "deaths": 10369,
-        "pvaccinated": 79
+        "pvaccinated": 79,
+        "pdeaths": 0.103
         },
           {
        "year": 2002,
         "deaths": 10021,
-        "pvaccinated": 70
+        "pvaccinated": 70,
+        "pdeaths": 0.097
         },
           {
        "year": 2003,
         "deaths": 10132,
-        "pvaccinated": 81
+        "pvaccinated": 81,
+        "pdeaths": 0.096
         },
           {
        "year": 2004,
         "deaths": 8100,
-        "pvaccinated": 95
+        "pvaccinated": 95,
+        "pdeaths": 0.075
         },
           {
        "year": 2005,
         "deaths": 7768,
-        "pvaccinated": 97
+        "pvaccinated": 97,
+        "pdeaths": 0.070
         },
           {
        "year": 2006,
         "deaths": 7601,
-        "pvaccinated": 99
+        "pvaccinated": 99,
+        "pdeaths": 0.067
         },
           {
        "year": 2007,
         "deaths": 7378,
-        "pvaccinated": 97
+        "pvaccinated": 97,
+        "pdeaths": 0.063
         },
           {
        "year": 2008,
         "deaths": 7276,
-        "pvaccinated": 94
+        "pvaccinated": 94,
+        "pdeaths": 0.061
         },
           {
        "year": 2009,
         "deaths": 7738,
-        "pvaccinated": 94
+        "pvaccinated": 94,
+        "pdeaths": 0.063
         },
           {
        "year": 2010,
         "deaths": 7831,
-        "pvaccinated": 96
+        "pvaccinated": 96,
+        "pdeaths": 0.062
         },
           {
        "year": 2011,
         "deaths": 7940,
-        "pvaccinated":97
+        "pvaccinated":97,
+        "pdeaths": 0.061
         },
           {
        "year": 2012,
         "deaths": 8456,
-        "pvaccinated": 96
+        "pvaccinated": 96,
+        "pdeaths": 0.063
         },
           {
        "year": 2013,
         "deaths": 8407,
-        "pvaccinated": 96
+        "pvaccinated": 96,
+        "pdeaths": 0.061
         },
           {
        "year": 2014,
         "deaths": 7069,
-        "pvaccinated": 94
+        "pvaccinated": 94,
+        "pdeaths": 0.050
         },
           {
        "year": 2015,
         "deaths": 6978,
-        "pvaccinated": 94
+        "pvaccinated": 94,
+        "pdeaths": 0.048
         },
           {
        "year": 2016,
         "deaths": 6849,
-        "pvaccinated": 96
+        "pvaccinated": 96,
+        "pdeaths": 0.046
         },
           {
        "year": 2017,
         "deaths": 6777,
-        "pvaccinated": 97
+        "pvaccinated": 97,
+        "pdeaths": 0.042
         }
         
     ]
@@ -149,141 +177,169 @@
     {
         "year": 1990,
         "deaths": 4395,
-        "pvaccinated": 66
+        "pvaccinated": 66,
+        "pdeaths": 0.064
         },
         {
        "year": 1991,
         "deaths": 4281,
-        "pvaccinated": 68
+        "pvaccinated": 68,
+        "pdeaths": 0.061
         },
           {
        "year": 1992,
         "deaths": 4083,
-        "pvaccinated": 70
+        "pvaccinated": 70,
+        "pdeaths": 0.057
         },
           {
        "year": 1993,
         "deaths": 3902,
-        "pvaccinated": 76
+        "pvaccinated": 76,
+        "pdeaths": 0.053
         },
           {
        "year": 1994,
         "deaths": 3663,
-        "pvaccinated": 80
+        "pvaccinated": 80,
+        "pdeaths": 0.049
         },
           {
        "year": 1995,
         "deaths": 3481,
-        "pvaccinated": 84
+        "pvaccinated": 84,
+        "pdeaths": 0.046
         },
           {
        "year": 1996,
         "deaths": 3273,
-        "pvaccinated": 82
+        "pvaccinated": 82,
+        "pdeaths": 0.042
         },
           {
        "year": 1997,
         "deaths": 3124,
-        "pvaccinated": 80
+        "pvaccinated": 80,
+        "pdeaths": 0.039
         },
           {
        "year": 1998,
         "deaths": 2926,
-        "pvaccinated": 86
+        "pvaccinated": 86,
+        "pdeaths": 0.036
         },  {
        "year": 1999,
         "deaths": 2752,
-        "pvaccinated": 92
+        "pvaccinated": 92,
+        "pdeaths": 0.033
         },
           {
        "year": 2000,
         "deaths": 2527,
-        "pvaccinated": 92
+        "pvaccinated": 92,
+        "pdeaths": 0.030
         },
           {
        "year": 2001,
         "deaths": 2369,
-        "pvaccinated": 91
+        "pvaccinated": 91,
+        "pdeaths": 0.028
         },
           {
        "year": 2002,
         "deaths": 2263,
-        "pvaccinated": 94
+        "pvaccinated": 94,
+        "pdeaths": 0.026
         },
           {
        "year": 2003,
         "deaths": 2127,
-        "pvaccinated": 96
+        "pvaccinated": 96,
+        "pdeaths": 0.024
         },
           {
        "year": 2004,
         "deaths": 2024,
-        "pvaccinated": 88
+        "pvaccinated": 88,
+        "pdeaths": 0.022
         },
           {
        "year": 2005,
         "deaths": 1951,
-        "pvaccinated": 93
+        "pvaccinated": 93,
+        "pdeaths": 0.021
         },
           {
        "year": 2006,
         "deaths": 1865,
-        "pvaccinated": 87
+        "pvaccinated": 87,
+        "pdeaths": 0.020
         },
           {
        "year": 2007,
         "deaths": 1807,
-        "pvaccinated": 85
+        "pvaccinated": 85,
+        "pdeaths": 0.019
         },
           {
        "year": 2008,
         "deaths": 1745,
-        "pvaccinated": 96
+        "pvaccinated": 96,
+        "pdeaths": 0.018
         },
           {
        "year": 2009,
         "deaths": 1691,
-        "pvaccinated": 97
+        "pvaccinated": 97,
+        "pdeaths": 0.017
         },
           {
        "year": 2010,
         "deaths": 1643,
-        "pvaccinated": 97
+        "pvaccinated": 97,
+        "pdeaths": 0.016
         },
           {
        "year": 2011,
         "deaths": 1593,
-        "pvaccinated":98
+        "pvaccinated":98,
+        "pdeaths": 0.016
         },
           {
        "year": 2012,
         "deaths": 1539,
-        "pvaccinated": 97
+        "pvaccinated": 97,
+        "pdeaths": 0.015
         },
           {
        "year": 2013,
         "deaths": 1504,
-        "pvaccinated": 87
+        "pvaccinated": 87,
+        "pdeaths": 0.014
         },
           {
        "year": 2014,
         "deaths": 1462,
-        "pvaccinated": 92
+        "pvaccinated": 92,
+        "pdeaths": 0.014
         },
           {
        "year": 2015,
         "deaths": 1429,
-        "pvaccinated": 97
+        "pvaccinated": 97,
+        "pdeaths": 0.013
         },
           {
        "year": 2016,
         "deaths": 1399,
-        "pvaccinated": 93
+        "pvaccinated": 93,
+        "pdeaths": 0.013
         },
           {
        "year": 2017,
         "deaths": 1379,
-        "pvaccinated": 91
+        "pvaccinated": 91,
+        "pdeaths": 0.012
         }
     
 ]
@@ -294,141 +350,169 @@
             {
         "year": 1990,
         "deaths": 13612,
-        "pvaccinated": 63
+        "pvaccinated": 63,
+        "pdeaths": 0.152
         },
         {
        "year": 1991,
         "deaths": 13370,
-        "pvaccinated": 63
+        "pvaccinated": 63,
+        "pdeaths": 0.144
         },
           {
        "year": 1992,
         "deaths": 13120,
-        "pvaccinated": 48
+        "pvaccinated": 48,
+        "pdeaths": 0.136
         },
           {
        "year": 1993,
         "deaths": 12802,
-        "pvaccinated": 51
+        "pvaccinated": 51,
+        "pdeaths": 0.128
         },
           {
        "year": 1994,
         "deaths": 12432,
-        "pvaccinated": 53
+        "pvaccinated": 53,
+        "pdeaths": 0.120
         },
           {
        "year": 1995,
         "deaths": 11913,
-        "pvaccinated": 55
+        "pvaccinated": 55,
+        "pdeaths": 0.112
         },
           {
        "year": 1996,
         "deaths": 11661,
-        "pvaccinated": 69
+        "pvaccinated": 69,
+        "pdeaths": 0.106
         },
           {
        "year": 1997,
         "deaths": 11321,
-        "pvaccinated": 62
+        "pvaccinated": 62,
+        "pdeaths": 0.100
         },
           {
        "year": 1998,
         "deaths": 10867,
-        "pvaccinated": 78
+        "pvaccinated": 78,
+        "pdeaths": 0.094
         },  {
        "year": 1999,
         "deaths": 10338,
-        "pvaccinated": 73
+        "pvaccinated": 73,
+        "pdeaths": 0.087
         },
           {
        "year": 2000,
         "deaths": 9774,
-        "pvaccinated": 78
+        "pvaccinated": 78,
+        "pdeaths": 0.080
         },
           {
        "year": 2001,
         "deaths": 8962,
-        "pvaccinated": 65
+        "pvaccinated": 65,
+        "pdeaths": 0.072
         },
           {
        "year": 2002,
         "deaths": 7679,
-        "pvaccinated": 60
+        "pvaccinated": 60,
+        "pdeaths": 0.061
         },
           {
        "year": 2003,
         "deaths": 6909,
-        "pvaccinated": 74
+        "pvaccinated": 74,
+        "pdeaths": 0.054
         },
           {
        "year": 2004,
         "deaths": 6409,
-        "pvaccinated": 92
+        "pvaccinated": 92,
+        "pdeaths": 0.049
         },
           {
        "year": 2005,
         "deaths": 6045,
-        "pvaccinated": 85
+        "pvaccinated": 85,
+        "pdeaths": 0.046
         },
           {
        "year": 2006,
         "deaths": 5813,
-        "pvaccinated": 85
+        "pvaccinated": 85,
+        "pdeaths": 0.043
         },
           {
        "year": 2007,
         "deaths": 5727,
-        "pvaccinated": 87
+        "pvaccinated": 87,
+        "pdeaths": 0.042
         },
           {
        "year": 2008,
         "deaths": 5582,
-        "pvaccinated": 95
+        "pvaccinated": 95,
+        "pdeaths": 0.040
         },
           {
        "year": 2009,
         "deaths": 5555,
-        "pvaccinated": 99
+        "pvaccinated": 99,
+        "pdeaths": 0.039
         },
           {
        "year": 2010,
         "deaths": 5422,
-        "pvaccinated": 93
+        "pvaccinated": 93,
+        "pdeaths": 0.038
         },
           {
        "year": 2011,
         "deaths": 5292,
-        "pvaccinated":95
+        "pvaccinated":95,
+        "pdeaths": 0.036
         },
           {
        "year": 2012,
         "deaths": 4888,
-        "pvaccinated": 97
+        "pvaccinated": 97,
+        "pdeaths": 0.033
         },
           {
        "year": 2013,
         "deaths": 4751,
-        "pvaccinated": 94
+        "pvaccinated": 94,
+        "pdeaths": 0.032
         },
           {
        "year": 2014,
         "deaths": 4454,
-        "pvaccinated": 94
+        "pvaccinated": 94,
+        "pdeaths": 0.029
         },
           {
        "year": 2015,
         "deaths": 4296,
-        "pvaccinated": 94
+        "pvaccinated": 94,
+        "pdeaths": 0.028
         },
           {
        "year": 2016,
         "deaths": 4150,
-        "pvaccinated": 94
+        "pvaccinated": 94,
+        "pdeaths": 0.026
         },
           {
        "year": 2017,
         "deaths": 4071,
-        "pvaccinated": 94
+        "pvaccinated": 94,
+        "pdeaths": 0.025
         }
     
 ]
@@ -439,141 +523,169 @@
             {
         "year": 1990,
         "deaths": 8956,
-        "pvaccinated": 77
+        "pvaccinated": 77,
+        "pdeaths": 0.011
         },
         {
        "year": 1991,
         "deaths": 8193,
-        "pvaccinated": 96
+        "pvaccinated": 96,
+        "pdeaths": 0.010
         },
           {
        "year": 1992,
         "deaths": 7837,
-        "pvaccinated": 96
+        "pvaccinated": 96,
+        "pdeaths": 0.009
         },
           {
        "year": 1993,
         "deaths": 7414,
-        "pvaccinated": 94
+        "pvaccinated": 94,
+        "pdeaths": 0.008
         },
           {
        "year": 1994,
         "deaths": 6961,
-        "pvaccinated": 97
+        "pvaccinated": 97,
+        "pdeaths": 0.008
         },
           {
        "year": 1995,
         "deaths": 6707,
-        "pvaccinated": 97
+        "pvaccinated": 97,
+        "pdeaths": 0.007
         },
           {
        "year": 1996,
         "deaths": 6371,
-        "pvaccinated": 98
+        "pvaccinated": 98,
+        "pdeaths": 0.007
         },
           {
        "year": 1997,
         "deaths": 6127,
-        "pvaccinated": 98
+        "pvaccinated": 98,
+        "pdeaths": 0.006
         },
           {
        "year": 1998,
         "deaths": 5809,
-        "pvaccinated": 98
+        "pvaccinated": 98,
+        "pdeaths": 0.006
         },  {
        "year": 1999,
         "deaths": 5337,
-        "pvaccinated": 99
+        "pvaccinated": 99,
+        "pdeaths": 0.005
         },
           {
        "year": 2000,
         "deaths": 4884,
-        "pvaccinated": 99
+        "pvaccinated": 99,
+        "pdeaths": 0.005
         },
           {
        "year": 2001,
         "deaths": 4627,
-        "pvaccinated": 99
+        "pvaccinated": 99,
+        "pdeaths": 0.005
         },
           {
        "year": 2002,
         "deaths": 4480,
-        "pvaccinated": 99
+        "pvaccinated": 99,
+        "pdeaths": 0.004
         },
           {
        "year": 2003,
         "deaths": 4337,
-        "pvaccinated": 99
+        "pvaccinated": 99,
+        "pdeaths": 0.004
         },
           {
        "year": 2004,
         "deaths": 4018,
-        "pvaccinated": 99
+        "pvaccinated": 99,
+        "pdeaths": 0.004
         },
           {
        "year": 2005,
         "deaths": 3912,
-        "pvaccinated": 99
+        "pvaccinated": 99,
+        "pdeaths": 0.004
         },
           {
        "year": 2006,
         "deaths": 3671,
-        "pvaccinated": 99
+        "pvaccinated": 99,
+        "pdeaths": 0.003
         },
           {
        "year": 2007,
         "deaths": 3450,
-        "pvaccinated": 99
+        "pvaccinated": 99,
+        "pdeaths": 0.003
         },
           {
        "year": 2008,
         "deaths": 3504,
-        "pvaccinated": 98
+        "pvaccinated": 98,
+        "pdeaths": 0.003
         },
           {
        "year": 2009,
         "deaths": 3457,
-        "pvaccinated": 98
+        "pvaccinated": 98,
+        "pdeaths": 0.003
         },
           {
        "year": 2010,
         "deaths": 3512,
-        "pvaccinated": 96
+        "pvaccinated": 96,
+        "pdeaths": 0.003
         },
           {
        "year": 2011,
         "deaths": 3455,
-        "pvaccinated":99
+        "pvaccinated":99,
+        "pdeaths": 0.003
         },
           {
        "year": 2012,
         "deaths": 3355,
-        "pvaccinated": 99
+        "pvaccinated": 99,
+        "pdeaths": 0.003
         },
           {
        "year": 2013,
         "deaths": 3267,
-        "pvaccinated": 90
+        "pvaccinated": 90,
+        "pdeaths": 0.003
         },
           {
        "year": 2014,
         "deaths": 3201,
-        "pvaccinated": 95
+        "pvaccinated": 95,
+        "pdeaths": 0.003
         },
           {
        "year": 2015,
         "deaths": 3171,
-        "pvaccinated": 99
+        "pvaccinated": 99,
+        "pdeaths": 0.003
         },
           {
        "year": 2016,
         "deaths": 3216,
-        "pvaccinated": 96
+        "pvaccinated": 96,
+        "pdeaths": 0.003
         },
           {
        "year": 2017,
         "deaths": 3343,
-        "pvaccinated": 93
+        "pvaccinated": 93,
+        "pdeaths": 0.003
         }
     
 ]
@@ -584,141 +696,170 @@
             {
         "year": 1990,
         "deaths": 4184,
-        "pvaccinated": 96
+        "pvaccinated": 96,
+        "pdeaths": 0.002
         },
         {
        "year": 1991,
         "deaths": 4017,
-        "pvaccinated": 95
+        "pvaccinated": 95,
+        "pdeaths": 0.002
         },
           {
        "year": 1992,
         "deaths": 3981,
-        "pvaccinated": 94
+        "pvaccinated": 94,
+        "pdeaths": 0.002
         },
           {
        "year": 1993,
         "deaths": 4137,
-        "pvaccinated": 96
+        "pvaccinated": 96,
+        "pdeaths": 0.002
         },
           {
        "year": 1994,
         "deaths": 4193,
-        "pvaccinated": 97
+        "pvaccinated": 97,
+        "pdeaths": 0.002
         },
           {
        "year": 1995,
         "deaths": 4256,
-        "pvaccinated": 98
+        "pvaccinated": 98,
+        "pdeaths": 0.002
         },
           {
        "year": 1996,
         "deaths": 4290,
-        "pvaccinated": 98
+        "pvaccinated": 98,
+        "pdeaths": 0.002
         },
           {
        "year": 1997,
         "deaths": 4344,
-        "pvaccinated": 98
+        "pvaccinated": 98,
+        "pdeaths": 0.002
         },
           {
        "year": 1998,
         "deaths": 4332,
-        "pvaccinated": 98
-        },  {
+        "pvaccinated": 98,
+        "pdeaths": 0.002
+        },  
+            {
        "year": 1999,
         "deaths": 4225,
-        "pvaccinated": 99
+        "pvaccinated": 99,
+        "pdeaths": 0.002
         },
           {
        "year": 2000,
         "deaths": 4092,
-        "pvaccinated": 99
+        "pvaccinated": 99,
+        "pdeaths": 0.001
         },
           {
        "year": 2001,
         "deaths": 3996,
-        "pvaccinated": 98
+        "pvaccinated": 98,
+        "pdeaths": 0.001
         },
           {
        "year": 2002,
         "deaths": 3844,
-        "pvaccinated": 97
+        "pvaccinated": 97,
+        "pdeaths": 0.001
         },
           {
        "year": 2003,
         "deaths": 3602,
-        "pvaccinated": 99
+        "pvaccinated": 99,
+        "pdeaths": 0.001
         },
           {
        "year": 2004,
         "deaths": 3195,
-        "pvaccinated": 99
+        "pvaccinated": 99,
+        "pdeaths": 0.001
         },
           {
        "year": 2005,
         "deaths": 2790,
-        "pvaccinated": 99
+        "pvaccinated": 99,
+        "pdeaths": 0.001
         },
           {
        "year": 2006,
         "deaths": 2437,
-        "pvaccinated": 99
+        "pvaccinated": 99,
+        "pdeaths": 0.001
         },
           {
        "year": 2007,
         "deaths": 2216,
-        "pvaccinated": 99
+        "pvaccinated": 99,
+        "pdeaths": 0.001
         },
           {
        "year": 2008,
         "deaths": 2092,
-        "pvaccinated": 99
+        "pvaccinated": 99,
+        "pdeaths": 0.000
         },
           {
        "year": 2009,
         "deaths": 1982,
-        "pvaccinated": 98
+        "pvaccinated": 98,
+        "pdeaths": 0.000
         },
           {
        "year": 2010,
         "deaths": 1870,
-        "pvaccinated": 98
+        "pvaccinated": 98,
+        "pdeaths": 0.000
         },
           {
        "year": 2011,
         "deaths": 1840,
-        "pvaccinated":98
+        "pvaccinated":98,
+        "pdeaths": 0.000
         },
           {
        "year": 2012,
         "deaths": 1799,
-        "pvaccinated": 97
+        "pvaccinated": 97,
+        "pdeaths": 0.000
         },
           {
        "year": 2013,
         "deaths": 1805,
-        "pvaccinated": 98
+        "pvaccinated": 98,
+        "pdeaths": 0.000
         },
           {
        "year": 2014,
         "deaths": 1802,
-        "pvaccinated": 98
+        "pvaccinated": 98,
+        "pdeaths": 0.000
         },
           {
        "year": 2015,
         "deaths": 1829,
-        "pvaccinated": 98
+        "pvaccinated": 98,
+        "pdeaths": 0.000
         },
           {
        "year": 2016,
         "deaths": 1915,
-        "pvaccinated": 98
+        "pvaccinated": 98,
+        "pdeaths": 0.000
         },
           {
        "year": 2017,
         "deaths": 1967,
-        "pvaccinated": 98
+        "pvaccinated": 98,
+        "pdeaths": 0.000
         }
     
 ]
