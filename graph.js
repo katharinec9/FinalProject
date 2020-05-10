@@ -60,7 +60,7 @@ var graph =
         .classed("labels", true)
    
    labels.append("text")
-        .text(" Deaths Caused by Vaccine Preventable Diseases each year")
+        .text("Vaccine Preventable Deaths vs Child Vaccination Rate")
         .classed("title", true)
         .attr("text-anchor", "middle")
         .attr("x", margins.left+(graph.width/2))
@@ -74,7 +74,7 @@ var graph =
     labels.append("g")
         .attr("transform", "translate(20,"+(margins.top+(graph.height/2))+")")
         .append("text")
-        .text("% of deaths")
+        .text("% of population that died from vaccine preventable diseases")
         .classed("label", true)
         .attr("text-anchor", "middle")
         .attr("transform", "rotate(270)")
