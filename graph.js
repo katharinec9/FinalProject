@@ -1,3 +1,7 @@
+     var mycolor = d3.scaleOrdinal()
+     .domain(["Senegal", "Bolivia", "United States", "Mexico", "Cambodia"])
+     .range(d3.schemeSet1)
+     
 var getCountry = function(country)
     {return (country.name)}
 
@@ -13,9 +17,9 @@ var DataPromise = d3.json("Data.json");
     })
 var intGraph = function(target, countrys)
 {
-    var screen = {width:600, height:600}
+    var screen = {width:800, height:800}
     
-    var margins = {top:60,bottom:50,left:70,right: 60}
+    var margins = {top:130,bottom:116,left:93,right: 130}
 var graph =
     {
         width:screen.width-margins.left-margins.right,
@@ -64,13 +68,13 @@ var graph =
         .classed("title", true)
         .attr("text-anchor", "middle")
         .attr("x", margins.left+(graph.width/2))
-        .attr("y",margins.top-2)
+        .attr("y",margins.top-30)
     labels.append("text")
         .text("Year")
         .classed("label", true)
         .attr("text-anchor", "middle")
         .attr("x", margins.left+(graph.width/2))
-        .attr("y",screen.height-5)
+        .attr("y",screen.height-50)
     labels.append("g")
         .attr("transform", "translate(20,"+(margins.top+(graph.height/2))+")")
         .append("text")
@@ -79,7 +83,7 @@ var graph =
         .attr("text-anchor", "middle")
         .attr("transform", "rotate(270)")
          labels.append("g")
-        .attr("transform", "translate(600,"+(margins.top+ (graph.height/2))+")")
+        .attr("transform", "translate(740,"+(margins.top+ (graph.height/2))+")")
         .append("text")
         .text("% of children vaccinated (DTP1)")
         .classed("label", true)
@@ -192,16 +196,22 @@ var drawLines = function(countrys,graph,target,xScale,yScaleL,yScaleR, yearScale
          .style("stroke-dasharray", ("3, 3"))
      
         }
-        var xLabel=540
+var svg= d3.select("#vaccinegraph");
+  
+    var xLabel=540
         var size=20
         var allgroups= ["Senegal", "Mexico", "Bolivia", "United States", "Cambodia"]
         svg.selectAll("mylabels")
         .data(allgroups)
         .enter()
         .append("text")
-        .attr("x", 590+size*.8)
-        .attr("y", function(d, i){return i *(size + 5) + (size/2)})
-        .style("alignment-baseline", "middle")
+        .attr("x", 690+size*.8)
+        .attr("y", function(d, i){return i *(size - 5) + (size/2)})
+        .style("fill", function(d){return mycolor(d)})
+        .text(function(d){return d})
+        .style("alightment-baseline", "middle")
+        
+        
       
 
 
